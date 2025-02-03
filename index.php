@@ -10,7 +10,7 @@
 <body>
     <header></header>
     <main>
-        <form action="" method="post">
+        <form action="procesar.php" method="post" id="form" >
             <div>
                 <label for="name">Nombre</label>
                 <input type="text" name="name" id="name" required pattern="^[a-zA-ZáéíóúÁÉÍÓÚñÑ\s]{2,50}$"
@@ -35,8 +35,13 @@
                 <button type="submit">Enviar</button>
             </div>
         </form>
+        <div id="mensajeError" style="color: red;"></div>
     </main>
     <footer></footer>
+
+
+    <script src="./validaciones.js"></script>
+
 </body>
 
 </html>
