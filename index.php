@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -13,9 +12,9 @@
         <form action="procesar.php" method="post" id="form" >
             <div>
                 <label for="name">Nombre</label>
-                <input type="text" name="name" id="name" required pattern="^[a-zA-ZáéíóúÁÉÍÓÚñÑ\s]{2,50}$"
+                <input type="text" name="name" id="name" required pattern="^[a-zA-ZáéíóúÁÉÍÓÚñÑ\s]{2,}$"
                     placeholder="Ej. Juan Pérez"
-                    title="El nombre solo puede contener letras y espacios (2-50 caracteres)">
+                    title="El nombre solo puede contener letras y espacios (mínimo 2 caracteres)">
             </div>
 
             <div>
@@ -26,9 +25,9 @@
             <div>
                 <label for="password">Contraseña</label>
                 <input type="password" name="password" id="password" required autocomplete="off"
-                    pattern="(?=.*\d)(?=.*[a-zA-Z]).{6,20}"
-                    placeholder="Mínimo 6 caracteres, al menos una letra y un número"
-                    title="Debe contener al menos una letra, un número y entre 6 y 20 caracteres">
+                    pattern="^(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$"
+                    placeholder="Al menos 8 caracteres, una mayúscula, un número y un carácter especial"
+                    title="Debe contener al menos una letra mayúscula, un número, un carácter especial y mínimo 8 caracteres">
             </div>
 
             <div>
@@ -39,9 +38,7 @@
     </main>
     <footer></footer>
 
-
     <script src="./validaciones.js"></script>
-
 </body>
 
 </html>
