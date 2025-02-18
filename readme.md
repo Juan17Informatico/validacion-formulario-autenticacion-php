@@ -7,11 +7,12 @@ Este proyecto es un formulario de registro con validaciones en el cliente (JavaS
 ## 📂 Estructura del Proyecto
 
 📁 Proyecto 
+```
     │── index.php # Formulario principal 
     │── validaciones.js # Validaciones en el cliente 
     │── procesar.php # Procesamiento y validación en el servidor 
     │── styles.css # Estilos del formulario
----
+```
 
 ## 🚀 Funcionamiento
 
